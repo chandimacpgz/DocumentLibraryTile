@@ -76,18 +76,35 @@
                     
                 }
 
-                else{   //ExtraLarge Tile
-                    $.ajax({
-                        type: "GET",
-                        url: x.slice(0, x.lastIndexOf("/")) + "/_api/lists/getbytitle('"+settings.listName+"')",
-                        contentType:"jsonp",
-                    }).done(function (data) {              
-                        deferred.resolve([{itemCount:data.childNodes[0].innerHTML}]);
-                    }).fail(deferred.reject);
+                else {   //ExtraLarge Tile
+
+                    var context = SP.ClientContext.get_current();
+
+                    var oList = context.get_web().get_lists().getByTitle(settings.listName);
+                    var collListItem = oList.getItems();
+
+                    context.load(collListItem);
+
+                    context.executeQueryAsync(getAllItems, fail);
+
+                    function getAllItems() {
+                        var tasksEntries = [];
+
+                            var itemsCount = collListItem.get_count();
+                            for (var i = 0; i < itemsCount; i++) {
+                                var item = collListItem.itemAt(i);
+                                var taskEntry = item.get_fieldValues();
+                                tasksEntries.push(taskEntry);
+                            }
+                        deferred.resolve([tasksEntries]);
+
+                    }
+
+                    function fail(sender, args) {
+                        deferred.reject(args.get_message() + '\n' + args.get_stackTrace());
+                    }
                 }
                 
-                
-
                 return deferred;
             }
 

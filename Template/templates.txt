@@ -1,0 +1,21 @@
+[
+	{
+		"name": "DocumentLibraryTile",
+		"title": "Document Library Tile",
+		"type": ["Small","Large","ExtraLarge"],
+		"description": "",
+		"parameters": 
+			[
+				{"name": "DocName", "title": "Document Name", "type": "text", "default": "Untitled", "target": "js", "isStatic": false}
+				
+			],
+		"scripts": ["%PackageUrl%/DocumentLibraryTemplate.js"],
+		"css": ["%PackageUrl%/DocumentLibraryTemplate.css"],
+		"libraries": [],
+		"maximumItemsFromList": 1,
+		"class": "TileDataContext.Templates.DocumentLibraryTemplate",
+		"html": "file:%PackageUrl%/tile.html",
+		"minimumSupportedVersion": "3.0",
+		"customDataAccess": true
+	}
+]

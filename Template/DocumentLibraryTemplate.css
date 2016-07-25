@@ -1,0 +1,138 @@
+
+/*****************************************base styles***********************************/
+.metro-tile {
+	float: left;
+	height: auto;
+	width: auto;
+	color: #fff;
+	font-family: "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 15px;
+	/*margin-right: 10px;
+	margin-bottom: 10px;*/
+	position: relative;
+	box-shadow: 0 0 0 3px transparent;
+    overflow: hidden;
+}
+.items-wrap, .single-item {
+	float: left;
+	width: 100% !notdynamic;
+	height: 100% !notdynamic;
+}
+.single-item-anim {
+	transition-property: transform;
+	transition-duration: 500ms;
+	transition-timing-function: ease;
+	transform: translate(0%, -100%) translateZ(0px);
+}
+.cont-wrapper {
+	float: left;
+	padding: 10px;
+	overflow: hidden;
+	width: 100% !notdynamic;
+	box-sizing: border-box;
+}
+.cont-time {
+	float: left;
+	width: 100% !notdynamic;
+}
+
+.hltext {
+    font-weight: 600;
+}
+/**********************************medium**************************************/
+.medium-tile, .TileContainer {
+	height: 100% !notdynamic;
+	width: 100% !notdynamic;
+}
+.mt-cont {
+    float: left;
+    margin-bottom: 5px;
+    width: 60% !notdynamic;
+}
+.hlmtext {
+    font-size: 21px;
+}
+
+/*Start of PDF Tile Styles*/
+.TileImage{
+    height: 50%;
+    width: 50%;
+    margin-left: 17.5%;
+    margin-top: 5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.TileTitle{
+    color: white;
+    text-align: left; 
+    font-size: 120%; 
+    margin-left: 5%; 
+    overflow: hidden; 
+}
+
+.TileLargeContainer{    
+    display: block;
+    color: white;
+    margin-left: 5%;
+    margin-top: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pdf-iframe-document{
+    margin-left: 1%;
+    margin-top: 5%;
+    height: 50%;
+}
+
+.pdf-docdesc{
+    font-size: 90%;
+    color: white;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.pdf-block{
+    overflow: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.pdfTile {
+	background-color: #aaaaaa;
+}
+
+.pdf-pop-up { 
+    display:none; 
+}
+
+.preview-icon{
+    margin-top: 15%;
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+.doc-lib-sub-files{
+    color: white; 
+    text-align: right; 
+    font-size: 120%; 
+    margin-left: 5%; 
+    overflow: hidden;
+    margin-right: 5%
+}
+
+.doc-lib-sub-count{
+    color: white;
+    text-align: center; 
+    font-size: 500%; 
+    margin-left: 5%; 
+    overflow: hidden;
+}
+/*End of PDF Tile Styles*/

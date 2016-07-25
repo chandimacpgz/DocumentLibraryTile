@@ -1,0 +1,6 @@
+{
+	"name": "DocumentLibraryTile",
+	"title": "Document Library Tile",
+	"description": "",
+	"version": "1.0"
+}

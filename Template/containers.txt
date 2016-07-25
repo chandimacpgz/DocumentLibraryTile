@@ -1,0 +1,18 @@
+[
+	{
+		"name": "DocumentLibraryContainer",
+		"type": "Small",
+		"parameters": 
+			[
+				{"name": "TileTitle", "title": "Tite Title", "type": "text", "default": "DocumentLibrary", "target": "html", "isStatic": false}
+			],
+		"scripts": [],
+		"css": ["%PackageUrl%/DocumentLibraryTemplate.css"],
+		"libraries": [],
+		"class": "TileDataContext.Templates.DocumentLibraryTemplate",
+		"html": "file:%PackageUrl%/container.html",
+		"contentPresenter": ".items-wrap",
+		"childName": ".single-item",
+		"animationContainer": ".items-wrap"
+	}
+]

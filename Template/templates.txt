@@ -4,11 +4,7 @@
 		"title": "Document Library Tile",
 		"type": ["Small","Large","ExtraLarge"],
 		"description": "",
-		"parameters": 
-			[
-				{"name": "DocName", "title": "Document Name", "type": "text", "default": "Untitled", "target": "js", "isStatic": false}
-				
-			],
+		"parameters":[],
 		"scripts": ["%PackageUrl%/DocumentLibraryTemplate.js"],
 		"css": ["%PackageUrl%/DocumentLibraryTemplate.css"],
 		"libraries": [],

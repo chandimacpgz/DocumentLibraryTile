@@ -71,6 +71,8 @@
     overflow: hidden; 
 }
 
+
+
 .TileLargeContainer{    
     display: block;
     color: white;
@@ -81,37 +83,19 @@
     text-overflow: ellipsis;
 }
 
-.pdf-iframe-document{
-    margin-left: 1%;
-    margin-top: 5%;
-    height: 50%;
+/*
+.documentLibraryTile{
+    
+}
+*/
+
+.tbc-title {
+    bottom: 0;
+    position: absolute;
 }
 
-.pdf-docdesc{
-    font-size: 90%;
-    color: white;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-.pdf-block{
-    overflow: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.pdfTile {
-	background-color: #aaaaaa;
-}
-
-.pdf-pop-up { 
-    display:none; 
-}
-
-.preview-icon{
-    margin-top: 15%;
-    height: 100%;
-    width: 100%;
+.doc-lib-list-title{
+    font-size: 110%;
 }
 
 .row {
@@ -134,5 +118,17 @@
     font-size: 500%; 
     margin-left: 5%; 
     overflow: hidden;
+}
+
+.doc-lib-list{
+    margin-left: 5%;
+    margin-top: 5%;
+    color: white;
+    overflow-x: hidden;
+}
+
+.doc-lib-list-item{
+    margin-left: 5%;
+    font-size: 200%;
 }
 /*End of PDF Tile Styles*/
